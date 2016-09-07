@@ -92,6 +92,7 @@ alias gs='git status'
 alias cdw='cd ~/workspace'
 alias cdp='cd ~/personal'
 alias rdbm='rake db:migrate'
+alias td='. ~/dotfiles/tmux-default.sh'
 
 eval "$(rbenv init -)"
 export NVM_DIR="$HOME/.nvm"
