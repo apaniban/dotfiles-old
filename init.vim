@@ -5,6 +5,7 @@ Plug 'mxw/vim-jsx'
 Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-fugitive'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'kien/ctrlp.vim'
 " call PlugInstall to install new plugins
 call plug#end()
 
@@ -15,7 +16,6 @@ set clipboard=unnamed
 set cc=100
 
 " Gruvbox config
-let g:gruvbox_contrast_dark = 'soft'
 let g:gruvbox_italic=1
 let g:gruvbox_color_column = 'purple'
 colorscheme gruvbox
