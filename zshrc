@@ -1,11 +1,16 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/aljon/.oh-my-zsh
 
+ZSH_DISABLE_COMPFIX=true
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
+
+# Loading pure zsh theme
+autoload -U promptinit; promptinit
+prompt pure
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -55,7 +60,6 @@ plugins=(git)
 
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
-
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -83,17 +87,23 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Proxy on settings
-alias proxy_on='export http_proxy=http://internal-proxy.dc.vodafone.com.au:8080 && export HTTP_PROXY=$http_proxy && export HTTPS_PROXY=$http_proxy && export https_proxy=$http_proxy'
-
+alias vim='nvim'
 alias ea='vim ~/.zshrc'
 alias sa='source ~/.zshrc'
+alias evim='vim ~/.config/nvim/init.vim'
 alias gs='git status'
 alias cdw='cd ~/workspace'
 alias cdp='cd ~/personal'
-alias rdbm='rake db:migrate'
 alias td='. ~/dotfiles/tmux-default.sh'
+alias ta='tmux attach -t'
+alias tls='tmux list-sessions'
+alias tkill='tmux kill-session -t'
+alias ghci='stack ghci'
+alias glog='git log --graph --oneline --decorate --date=relative --all'
+alias wifi_reset='sudo networksetup -setv4off Wi-Fi; sudo  networksetup -setdhcp Wi-Fi'
 
 eval "$(rbenv init -)"
+
 export NVM_DIR="$HOME/.nvm"
-. "$(brew --prefix nvm)/nvm.sh"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
