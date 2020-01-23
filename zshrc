@@ -87,6 +87,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+EDITOR='nvim'
 alias vim='nvim'
 alias ea='vim ~/.zshrc'
 alias sa='source ~/.zshrc'
