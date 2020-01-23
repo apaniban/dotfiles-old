@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/aljon/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 ZSH_DISABLE_COMPFIX=true
 # Set name of the theme to load.
@@ -88,21 +88,31 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 EDITOR='nvim'
+
+# edit config shortcuts
 alias vim='nvim'
 alias ea='vim ~/.zshrc'
 alias sa='source ~/.zshrc'
 alias evim='vim ~/.config/nvim/init.vim'
+
+# git aliases
 alias gs='git status'
+alias glog='git log --graph --oneline --decorate --date=relative --all'
+
+# workspaces
 alias cdw='cd ~/workspace'
 alias cdp='cd ~/personal'
+
+# tmux shorcuts
 alias td='. ~/dotfiles/tmux-default.sh'
 alias ta='tmux attach -t'
 alias tls='tmux list-sessions'
 alias tkill='tmux kill-session -t'
-alias ghci='stack ghci'
-alias glog='git log --graph --oneline --decorate --date=relative --all'
+alias tdn='tmux --run-node'
+
 alias wifi_reset='sudo networksetup -setv4off Wi-Fi; sudo  networksetup -setdhcp Wi-Fi'
 
+# Version switchers
 eval "$(rbenv init -)"
 
 export NVM_DIR="$HOME/.nvm"
