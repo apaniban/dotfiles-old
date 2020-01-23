@@ -108,7 +108,7 @@ alias td='. ~/dotfiles/tmux-default.sh'
 alias ta='tmux attach -t'
 alias tls='tmux list-sessions'
 alias tkill='tmux kill-session -t'
-alias tdn='tmux --run-node'
+alias tdn='. ~/dotfiles/tmux-default.sh --run-node'
 
 alias wifi_reset='sudo networksetup -setv4off Wi-Fi; sudo  networksetup -setdhcp Wi-Fi'
 

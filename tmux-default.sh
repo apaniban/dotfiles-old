@@ -1,7 +1,7 @@
 #!/bin/sh
 SESSION_NAME=`basename "$PWD"`
 
-for opt in "#@"; do
+for opt in "$@"; do
   case ${opt} in
     --run-node)
       NODE_PROJECT=true
@@ -23,7 +23,7 @@ then
   tmux split-window -v -t ${SESSION_NAME}:1.1
   tmux select-pane -t ${SESSION_NAME}:1.0
 
-  if [ -z ${NODE_PROJECT} ]; then
+  if [ -n "${NODE_PROJECT}" ]; then
     for _pane in $(tmux list-panes -a -F '#{pane_id}'); do \
       tmux send-keys -t ${_pane} 'nvm use' C-m
     done
