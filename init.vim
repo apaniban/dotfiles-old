@@ -15,6 +15,8 @@ let mapleader=","
 " Set copy and paste from buffer
 set clipboard=unnamed
 set cc=100
+set ignorecase
+set smartcase
 
 " Gruvbox config
 let g:gruvbox_italic=1
