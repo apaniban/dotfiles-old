@@ -6,6 +6,7 @@ Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-fugitive'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'kien/ctrlp.vim'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " call PlugInstall to install new plugins
 call plug#end()
 
@@ -19,6 +20,11 @@ set cc=100
 let g:gruvbox_italic=1
 let g:gruvbox_color_column = 'purple'
 colorscheme gruvbox
+
+" Deoplete
+let g:deoplete#enable_at_startup = 1
+" <TAB>: completion.
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " Hightlight color for trailing spaces
 highlight ExtraWhitespace ctermbg=DarkRed
