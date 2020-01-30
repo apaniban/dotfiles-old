@@ -7,6 +7,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'kien/ctrlp.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'airblade/vim-gitgutter'
 " call PlugInstall to install new plugins
 call plug#end()
 
@@ -17,6 +18,10 @@ set clipboard=unnamed
 set cc=100
 set ignorecase
 set smartcase
+
+" gitgutter config
+set updatetime=100
+set signcolumn=yes
 
 " Gruvbox config
 let g:gruvbox_italic=1
