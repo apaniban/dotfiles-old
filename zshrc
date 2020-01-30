@@ -98,6 +98,7 @@ alias evim='vim ~/.config/nvim/init.vim'
 # git aliases
 alias gs='git status'
 alias glog='git log --graph --oneline --decorate --date=relative --all'
+alias gdb='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
 
 # workspaces
 alias cdw='cd ~/workspace'
