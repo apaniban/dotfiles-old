@@ -18,6 +18,7 @@ set clipboard=unnamed
 set cc=100
 set ignorecase
 set smartcase
+set wrap!
 
 " gitgutter config
 set updatetime=100
