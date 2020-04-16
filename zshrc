@@ -8,10 +8,6 @@ ZSH_DISABLE_COMPFIX=true
 # time that oh-my-zsh is loaded.
 # ZSH_THEME="robbyrussell"
 
-# Loading pure zsh theme
-autoload -U promptinit; promptinit
-prompt pure
-
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -61,6 +57,11 @@ plugins=(git)
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 source $ZSH/oh-my-zsh.sh
+
+# Loading pure zsh theme
+autoload -U promptinit; promptinit
+prompt pure
+
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
