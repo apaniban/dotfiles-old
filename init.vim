@@ -8,6 +8,7 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'kien/ctrlp.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'airblade/vim-gitgutter'
+Plug 'jiangmiao/auto-pairs'
 " call PlugInstall to install new plugins
 call plug#end()
 
