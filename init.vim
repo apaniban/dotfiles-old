@@ -1,7 +1,8 @@
 call plug#begin('~/.config/nvim/bundle')
 Plug 'preservim/nerdtree'
 Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
+Plug 'yuezk/vim-js'
+Plug 'maxmellon/vim-jsx-pretty'
 Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-fugitive'
 Plug 'ntpeters/vim-better-whitespace'
