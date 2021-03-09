@@ -84,7 +84,7 @@ alias cdw='cd ~/workspace'
 alias cdp='cd ~/personal'
 
 # tmux shorcuts
-alias td='. ~/personal/dotfiles/tmux-default.sh'
+alias td='. ~/dotfiles/tmux-default.sh'
 alias ta='tmux attach -t'
 alias tls='tmux list-sessions'
 alias tkill='tmux kill-session -t'
